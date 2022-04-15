@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: #5e5e5e;
+  font-family: 'Poppins';
+}
+
+a {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section__grid-love--container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+/* first grid complex */
+
+.section__grid-layout--1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.section__grid-outside--title {
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+
+.section__grid-picture {
+  position: relative;
+}
+
+.section__grid-absolute--text,
+.section__grid-absolute--2,
+.section__grid-absolute--4,
+.section__grid-absolute--7,
+.section__grid-absolute--8,
+.section__grid-absolute--sixth,
+.section__grid-absolute--tech {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  text-decoration: none;
+  display: inline-block;
+  height: auto;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 7px 11px 6px;
+  border-radius: 20px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  vertical-align: top;
+  transition: all 0.2s ease-in-out;
+}
+
+.section__grid-absolute--container,
+.section__grid-absolute--eighth {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.section__grid-absolute--3,
+.section__grid-absolute--5,
+.section__grid-absolute--6 {
+  text-decoration: none;
+  padding: 7px 11px 6px;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  vertical-align: top;
+  border-radius: 20px;
+  height: auto;
+  font-size: 10px;
+  line-height: 10px;
+  margin-right: 5px;
+}
+
+.section__grid-absolute--text,
+.section__grid-absolute--7,
+.section__grid-absolute--sixth {
+  color: #ffffff;
+  background-color: #009cff;
+}
+
+.section__grid-absolute--2,
+.section__grid-absolute--8 {
+  color: #ffffff;
+  background-color: #61c436;
+}
+
+.section__grid-absolute--3 {
+  color: #ffffff;
+  background-color: #a66bbe;
+}
+
+.section__grid-absolute--4,
+.section__grid-absolute--5,
+.section__grid-absolute--tech {
+  color: #ffffff;
+  background-color: #f99500;
+}
+
+.section__grid-absolute--6 {
+  color: #ffffff;
+  background-color: #d60000;
+}
+
+.section__grid-absolute--text:hover,
+.section__grid-absolute--2:hover,
+.section__grid-absolute--3:hover,
+.section__grid-absolute--4:hover,
+.section__grid-absolute--5:hover,
+.section__grid-absolute--6:hover,
+.section__grid-absolute--sixth:hover,
+.section__grid-absolute--tech:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.section__grid-absolute--7:hover,
+.section__grid-absolute--8:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.section__grid-card {
+  background-color: #ffffff;
+}
+
+.section__grid-play--svg {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.section__grid-play--2 {
+  width: 24px;
+  height: 24px;
+  color: #000000;
+  margin-right: 5px;
+}
+
+.section__grid-eye--svg,
+.section__grid-comment--svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.svg__comment {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.svg__comment--2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.section__grid-title--card {
+  padding: 23px 30px 20px;
+}
+
+.section__grid-title--anchor {
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.section__grid-title--anchor:hover,
+.section__grid-title--second:hover,
+.section__grid-title--third:hover {
+  color: #009cff;
+}
+
+.section__grid-description--below {
+  display: flex;
+  padding: 0 20px 20px 30px;
+}
+
+.section__grid-person--desc {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.section__grid-person--name {
+  color: #818181;
+}
+
+.section__grid-calendar--desc {
+  display: flex;
+  align-items: center;
+  color: #818181;
+}
+
+.section__grid-person {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.section__grid-svg--calendar {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* end first grid complex */
+
+/* start second grid complex */
+
+.section__grid-layout--2 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.section__grid-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ffffff;
+}
+
+.section__grid-column--picture {
+  grid-column-start: 1;
+}
+
+.section__grid-picture--7 {
+  height: 100%;
+  width: 100%;
+}
+
+.object__fit {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.section__grid-column--2 {
+  grid-column-start: 2;
+  position: relative;
+}
+
+.section__grid-title--second,
+.section__grid-title--third {
+  text-decoration: none;
+  color: #000000;
+  line-height: 1.33;
+}
+
+.section__grid-title--second {
+  font-size: 26px;
+}
+
+.section__grid-title--third {
+  font-size: 22px;
+}
+
+.section__grid-text--section,
+.section__grid-text--2 {
+  margin-top: 70px;
+  margin-left: 33px;
+}
+
+.section__grid-text--2 {
+  padding-right: 20px;
+}
+
+.section__grid-title--description {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 8px;
+}
+
+.section__grid-person--container {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.section__grid-person--2 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.svg__eye {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* end of second grid complex */
+
+/* start third grid complex */
+
+.section__grid-layout--3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/* end third grid complex */
+
+/* start fourth grid complex */
+
+.section__grid-column--fourth {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+/* end fourth grid complex */
+
+/* start fifth grid complex */
+
+.section__grid-column--fifth {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+/* end fifth grid complex */
+
+/* start sixth grid complex */
+
+.section__grid-column--sixth {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.section__grid-card--sixth {
+  position: relative;
+  overflow: hidden;
+}
+
+.section__grid-picture--sixth {
+  width: 100%;
+  height: 100%;
+}
+
+.picture__sixth {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.section__grid-picture--sixth::after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.section__grid-text--sixth {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  margin-top: 70px;
+  margin-left: 33px;
+  max-width: 310px;
+}
+
+.section__grid-text--seventh {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  margin-top: 70px;
+  margin-left: 33px;
+  max-width: 210px;
+}
+
+.section__grid-text--eighth {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  margin-top: 70px;
+  margin-left: 33px;
+  max-width: 350px;
+}
+
+.section__grid-title--sixth {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.section__grid-name--sixth {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.section__grid-person--sixth {
+  display: flex;
+  align-items: center;
+  margin-top: 130px;
+}
+
+.section__grid-absolute--sixth,
+.section__grid-absolute--eighth,
+.section__grid-absolute--tech,
+.section__grid-absolute--container,
+.section__grid-absolute--8 {
+  z-index: 2;
+}
+/* end sixth grid complex */
+
+/* start seventh grid complex */
+
+.section__grid-column--seventh {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.section__grid-picture--seventh {
+  width: 100%;
+  height: 300px;
+}
+
+.section__grid-picture--seventh::after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.section__grid-person--seventh {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* end seventh grid complex */
+
+/* start eighth grid complex */
+
+.section__grid-column--eighth {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section__grid-person--eighth {
+  display: flex;
+  align-items: center;
+  margin-top: 110px;
+}
