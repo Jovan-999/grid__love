@@ -1,52 +1,52 @@
 @media (max-width: 64em) {
-  .section__grid-layout--1 {
+  .section-grid__layout--1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .section__grid-layout--3,
-  .section__grid-column--eighth {
+  .section-grid__layout--3,
+  .section-grid__column--eighth {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .section__grid-column--fourth,
-  .section__grid-column--fifth,
-  .section__grid-column--sixth,
-  .section__grid-column--seventh {
+  .section-grid__column--fourth,
+  .section-grid__column--fifth,
+  .section-grid__column--sixth,
+  .section-grid__column--seventh {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 36em) {
-  .section__grid-layout--1,
-  .section__grid-layout--2,
-  .section__grid-layout--3,
-  .section__grid-column--fourth,
-  .section__grid-column--fifth,
-  .section__grid-column--sixth,
-  .section__grid-column--seventh,
-  .section__grid-column--eighth {
+  .section-grid__layout--1,
+  .section-grid__layout--2,
+  .section-grid__layout--3,
+  .section-grid__column--fourth,
+  .section-grid__column--fifth,
+  .section-grid__column--sixth,
+  .section-grid__column--seventh,
+  .section-grid__column--eighth {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 
-  .section__grid-column {
+  .section-grid__column {
     grid-template-columns: 1fr;
     position: relative;
     width: 100%;
     height: 100%;
   }
 
-  .section__grid-column--picture {
+  .section-grid__column--picture {
     position: absolute;
     width: inherit;
     height: inherit;
   }
 
-  .section__grid-picture--7::after {
+  .section-grid__picture--7::after {
     content: '';
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
@@ -58,20 +58,25 @@
     transition: all 0.2s ease-in-out;
   }
 
-  .section__grid-title--second {
-    color: #ffffff;
+  .section-grid__column--2 {
+    grid-column-start: 2;
+    position: relative;
+    height: 300px;
+    z-index: 2;
+  }
 
+  .section-grid__title--second {
+    color: #ffffff;
     z-index: 2;
     top: 0;
     left: 0;
     margin-top: 70px;
-    margin-left: 33px;
   }
 
-  .section__grid-person--container {
+  .section-grid__person--2 {
     display: flex;
     align-items: center;
-
+    position: absolute;
     bottom: 30px;
   }
 
@@ -80,7 +85,7 @@
     color: #ffffff;
   }
 
-  .section__grid-description--b {
+  .section-grid__description--b {
     display: none;
   }
 }
