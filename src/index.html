@@ -5,9 +5,2368 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link href="/src/style.css" rel="stylesheet" />
+    <title>Simple Tailwindcss</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="bg-gray-100 font-body">
+    <div class="max-w-7xl mx-auto">
+      <!--start container-->
+      <h1 class="mt-32 mb-24 text-2xl">Layout A (3 columns)</h1>
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
+        <!--first grid complex start-->
+        <div class="bg-white">
+          <!-- first card-->
+          <div class="relative">
+            <img class="w-full h-auto" src="/img/picture1.jpg" alt="Avatar" />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-primary hover:text-black hover:bg-white"
+              >Lifestyle</a
+            >
+          </div>
+          <div>
+            <h2 class="pt-6 px-10 pb-5">
+              <a
+                href="#"
+                class="text-xl text-black hover:text-primary font-medium"
+                >Everything you ever need to know about flowers</a
+              >
+            </h2>
+            <div class="flex pt-0 pr-5 pb-5 pl-10">
+              <div class="flex items-center mr-3">
+                <img
+                  class="rounded-full mr-2"
+                  src="/img/lisa.jpg"
+                  alt="Lisa Schofield"
+                />
+                <p class="opacity-50 text-xs">Lisa Schofield</p>
+              </div>
+              <div class="flex items-center opacity-50">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <p class="text-xs">6 days ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end first card-->
+        <div class="bg-white">
+          <!-- second card-->
+          <div class="relative">
+            <img class="w-full h-auto" src="/img/picture2.jpg" alt="Avatar" />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-black hover:bg-white"
+              >Food & Drinks</a
+            >
+          </div>
+          <div>
+            <h2 class="pt-6 px-10 pb-5">
+              <a
+                href="#"
+                class="text-xl text-black hover:text-primary font-medium"
+                >Coffee and lemons don't go together that well</a
+              >
+            </h2>
+            <div class="flex pt-0 pr-5 pb-5 pl-10">
+              <div class="flex items-center mr-3">
+                <img
+                  class="rounded-full mr-2"
+                  src="/img/lisa.jpg"
+                  alt="Lisa Schofield"
+                />
+                <p class="opacity-50 text-xs">Lisa Schofield</p>
+              </div>
+              <div class="flex items-center opacity-50">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <p class="text-xs">7 days ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end second card-->
+        <div class="bg-white">
+          <!-- third card-->
+          <div class="relative">
+            <img class="w-full h-auto" src="/img/picture3.jpg" alt="Avatar" />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-black hover:bg-white"
+              >Food & Drinks</a
+            >
+          </div>
+          <div>
+            <h2 class="pt-6 px-10 pb-5">
+              <a
+                href="#"
+                class="text-xl text-black hover:text-primary font-medium"
+                >Did you know that plants actually have a secret life?</a
+              >
+            </h2>
+            <div class="flex pt-0 pr-5 pb-5 pl-10">
+              <div class="flex items-center mr-3">
+                <img
+                  class="rounded-full mr-2"
+                  src="/img/lisa.jpg"
+                  alt="Lisa Schofield"
+                />
+                <p class="opacity-50 text-xs">Lisa Schofield</p>
+              </div>
+              <div class="flex items-center opacity-50">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <p class="text-xs">1 week ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end third card-->
+        <div class="bg-white">
+          <!-- fourth card-->
+          <div class="relative">
+            <img class="w-full h-auto" src="/img/picture4.jpg" alt="Avatar" />
+            <div class="absolute left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-white mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-tertiary hover:text-black hover:bg-white"
+                >Entertainment</a
+              >
+            </div>
+          </div>
+          <div>
+            <h2 class="pt-6 px-10 pb-5">
+              <a
+                href="#"
+                class="text-xl text-black hover:text-primary font-medium"
+                >Are rock concerts really coming back into fashion?</a
+              >
+            </h2>
+            <div class="flex pt-0 pr-5 pb-5 pl-10">
+              <div class="flex items-center mr-3">
+                <img
+                  class="rounded-full mr-2"
+                  src="/img/patricia.jpg"
+                  alt="Patricia Callahan"
+                />
+                <p class="opacity-50 text-xs">Patricia Callahan</p>
+              </div>
+              <div class="flex items-center opacity-50">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <p class="text-xs">4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fourth card-->
+        <div class="bg-white">
+          <!-- fifth card-->
+          <div class="relative">
+            <img class="w-full h-auto" src="/img/picture5.jpg" alt="Avatar" />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-black hover:bg-white"
+              >Technology</a
+            >
+          </div>
+          <div>
+            <h2 class="pt-6 px-10 pb-5">
+              <a
+                href="#"
+                class="text-xl text-black hover:text-primary font-medium"
+                >The world needs true geniuses now more than...</a
+              >
+            </h2>
+            <div class="flex pt-0 pr-5 pb-5 pl-10">
+              <div class="flex items-center mr-3">
+                <img
+                  class="rounded-full mr-2"
+                  src="/img/patricia.jpg"
+                  alt="Patricia Callahan"
+                />
+                <p class="opacity-50 text-xs">Patricia Callahan</p>
+              </div>
+              <div class="flex items-center opacity-50">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <p class="text-xs">4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fifth card-->
+        <div class="bg-white">
+          <!-- sixth card-->
+          <div class="relative">
+            <img class="w-full h-auto" src="/img/picture6.jpg" alt="Avatar" />
+            <div class="absolute left-7 top-7 flex items-center">
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-black hover:bg-white"
+                >Technology</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fifth hover:text-black hover:bg-white"
+                >Travel</a
+              >
+            </div>
+          </div>
+          <div>
+            <h2 class="pt-6 px-10 pb-5">
+              <a
+                href="#"
+                class="text-xl text-black hover:text-primary font-medium"
+                >Does a blog post look better with a featured...</a
+              >
+            </h2>
+            <div class="flex pt-0 pr-5 pb-5 pl-10">
+              <div class="flex items-center mr-3">
+                <img
+                  class="rounded-full mr-2"
+                  src="/img/lisa.jpg"
+                  alt="Lisa Schofield"
+                />
+                <p class="opacity-50 text-xs">Lisa Schofield</p>
+              </div>
+              <div class="flex items-center opacity-50">
+                <svg
+                  class="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <p class="text-xs">4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end sixth card-->
+      </div>
+      <!--end first grid complex-->
+      <h1 class="mt-32 mb-24 text-2xl">Layout B (1 column)</h1>
+      <div class="grid grid-cols-1 gap-8">
+        <!--start second grid complex-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start first card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:bg-black sm:after:bg-inherit after:opacity-40 after:absolute after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture7.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl sm:text-black hover:text-primary font-medium z-10 text-white"
+                >Everything you ever need to know about flowers</a
+              >
+              <p class="mt-2 sm:inline-block hidden sm:text-xs md:text-base sm:text-black text-white">
+                Credibly empower enterprise wide mindshare for excellent
+                "outside the box" thinking. Proactively mesh impactful meta
+                services rather than enterprise results. Professionally generate
+                end-to-end human capital holistic...
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Lisa Schofield</p>
+              <div class="flex items-center">
+                <svg
+                  class="sm:text-gray-400 text-white w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs text-white sm:text-gray-400">36,809 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end first card-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start second card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture8.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >Coffee and lemons don't go together that well</a
+              >
+              <p class="sm:text-black sm:inline-block hidden text-white mt-2 sm:text-xs md:text-base">
+                Monotonectally predominate emerging deliverables without
+                holistic information. Dynamically embrace cross unit quality
+                vectors before innovative initiatives. Dramatically maintain
+                global relationships for performance...
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Lisa Schofield</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">15,368 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end second card-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start third card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture9.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >Did you know that planys actually have a secret life?</a
+              >
+              <p class="sm:text-black sm:inline-block hidden text-white mt-2 sm:text-xs md:text-base">
+                Authoritatively negotiate resource leveling experiences without
+                prospective best practices. Holisticly engineer timely portals
+                and holistic potentialities. Credibly negotiate high payoff
+                functionalities whereas...
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Lisa Schofield</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">9,445 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end third card-->
+      </div>
+      <!-- end second grid complex-->
+      <h1 class="mt-32 mb-24 text-2xl">Layout B (2 columns)</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!--start third grid complex-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start first card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture7.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >Everything you ever need to know about flowers</a
+              >
+              <p class="sm:text-black sm:inline-block hidden text-white mt-2 sm:text-xs md:text-base">
+                Credibly empower enterprise wide mindshare for excellent
+                "outside the box" thinking...
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Lisa Schofield</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">36,809 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end first card-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start second card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture8.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >Everything you ever need to know about flowers</a
+              >
+              <p class="sm:text-black sm:inline-block hidden text-white mt-2 sm:text-xs md:text-base">
+                Monotonectally predominate emerging deliverables without holistic information....
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Lisa Schofield</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">36,809 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end second card-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start third card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture9.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >Did you know that plants actually have a secret life?</a
+              >
+              <p class="sm:text-black sm:inline-block hidden text-white mt-2 sm:text-xs md:text-base">
+                Authoritatively negotiate resource leveling experiences without prospective best...
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Lisa Schofield</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">9,445 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end third card-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start fourth card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/rock.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <div class="absolute left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-black mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-tertiary hover:text-white hover:bg-black"
+                >Entertainment</a
+              >
+            </div>
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >Are rock concerts really coming back into fashion</a
+              >
+              <p class="sm:text-black sm:inline-block hidden  text-white mt-2 sm:text-xs md:text-base">
+                Monotonectally pursue backward-compatible ideas without empowered...
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/patricia.jpg"
+                alt="Patricia Callahan"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Patricia Callahan</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">38,629 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fourth card-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start fifth card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture5.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-white hover:bg-black"
+              >Technology</a
+            >
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >The wolrd needs true geniuses now more than ever</a
+              >
+              <p class="sm:text-black sm:inline-block hidden text-white mt-2 sm:text-xs md:text-base">
+                Monotonectally transition high-quality technologies with real-time sources....
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/patricia.jpg"
+                alt="Patricia Callahan"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Patricia Callahan</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">16,868 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fifth card-->
+        <div
+          class="grid relative w-full h-full sm:grid-cols-2 bg-white"
+        >
+          <!--start sixth card-->
+          <div class="col-start-1 absolute sm:relative w-inherit h-inherit">
+            <div
+              class="w-full h-full after:content[''] after:absolute after:bg-black sm:after:bg-inherit after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+            >
+              <img
+                class="w-inherit h-inherit object-cover"
+                src="/img/picture6.jpg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div class="col-start-2 relative h-80 z-10 pt-0 pl-8 pb-0 pr-6">
+            <div class="absolute left-7 top-7 flex items-center">
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-white hover:bg-black"
+                >Technology</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fifth hover:text-white hover:bg-black"
+                >Travel</a
+              >
+            </div>
+            <div class="mt-16">
+              <a
+                href="#"
+                class="text-xl text-white sm:text-black hover:text-primary font-medium"
+                >Does a blog post look better with a featured image?</a
+              >
+              <p class="sm:text-black sm:inline-block hidden text-white mt-2 sm:text-xs md:text-base">
+                Authoritatively pontificate synergistic total linkage and pandemic metrics....
+              </p>
+            </div>
+            <div class="flex items-center gap-3 absolute bottom-8">
+              <img
+                class="rounded-full"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="sm:text-gray-400 text-white text-xs">Lisa Schofield</p>
+              <div class="sm:text-gray-400 text-white flex items-center">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <p class="text-xs">16,335 views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end sixth card-->
+      </div>
+      <!--end third grid complex-->
+      <h1 class="mt-32 mb-24 text-2xl">Layout C (3 columns)</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!--start grid complex fourth-->
+        <div class="bg-white relative h-72">
+          <!-- first card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Everything you ever need to know about flowers</a
+            >
+            <p class="text-base mt-2">
+              Credibly empower enterprise wide mindshare for excellent "outside
+              the box" thinking...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">4 comments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end first card-->
+        <div class="bg-white relative h-72">
+          <!-- second card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Coffee and lemons don't go together that well</a
+            >
+            <p class="text-base mt-2">
+              Monotonectally predominate emerging deliverables without holistic information. Dynamically embrace cross unit quality vectors before innovative initiatives....
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end second card-->
+        <div class="bg-white relative h-72">
+          <!-- third card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Did you know that plants actually have a secret life</a
+            >
+            <p class="text-base mt-2">
+              Authoritatively negotiate resource leveling experiences without prospective best practices. Holisticly engineer timely portals and holistic potentialities....
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end third card-->
+        <div class="bg-white relative h-72">
+          <!-- fourth card-->
+          <div class="relative">
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-black mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-tertiary hover:text-white hover:bg-black"
+                >Entertainment</a
+              >
+            </div>
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Are rock concerts really coming back into fashion?</a
+            >
+            <p class="text-base mt-2">
+              Monotonectally pursue backward-compatible ideas without empowered imperatives. Interactively predominate low-risk high-yield ROI rather than...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/patricia.jpg"
+                alt="Patricia Callahan"
+              />
+              <p class="opacity-50 text-xs">Patricia Callahan</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fourth card-->
+        <div class="bg-white relative h-72">
+          <!-- fifth card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-white hover:bg-black"
+              >Technology</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >The world needs true geniuses now more than ever</a
+            >
+            <p class="text-base mt-2">
+              Monotonectally transition high-quality technologies with real-time sources. Quickly actualize functional channels...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/patricia.jpg"
+                alt="Patricia Callahan"
+              />
+              <p class="opacity-50 text-xs">Patricia Callahan</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fifth card-->
+        <div class="bg-white relative h-72">
+          <!-- sixth card-->
+          <div class="relative">
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-black hover:bg-white"
+                >Technology</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fifth hover:text-black hover:bg-white"
+                >Travel</a
+              >
+            </div>
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Does a blog post look better with a featured image?</a
+            >
+            <p class="text-base mt-2">
+              Authoritatively pontificate synergistic total linkage and pandemic metrics. Assertively initiate interactive...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end sixth card-->
+      </div>
+      <!--end grind complex fourth -->
+      <h1 class="mt-32 mb-24 text-2xl">Layout C (4 columns)</h1>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7"
+      >
+        <!--start fifth complex grid-->
+        <div class="bg-white relative h-72">
+          <!-- first card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Everything you ever need to know about flowers</a
+            >
+            <p class="text-base mt-2">
+              Credibly empower enterprise wide mindshare for excellent "outside
+              the box" thinking...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">4 comments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end first card-->
+        <div class="bg-white relative h-72">
+          <!-- second card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Coffee and lemons don't go together that well</a
+            >
+            <p class="text-base mt-2">
+              Monotonectally predominate emerging deliverables without holistic information....
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end second card-->
+        <div class="bg-white relative h-72">
+          <!-- third card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Did you know that plants actually have a secret life?</a
+            >
+            <p class="text-base mt-2">
+              Authoritatively negotiate resource leveling experiences without prospective best...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end third card-->
+        <div class="bg-white relative h-72">
+          <!-- fourth card-->
+          <div class="relative">
+            <div class="absolute left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-black mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-tertiary hover:text-white hover:bg-black"
+                >Entertainment</a
+              >
+            </div>
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Are rock concerts really coming back into fashion?</a
+            >
+            <p class="text-base mt-2">
+              Monotonectally pursue backward-compatible ideas without empowered...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/patricia.jpg"
+                alt="Patricia Callahan"
+              />
+              <p class="opacity-50 text-xs">Patricia Callahan</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fourth card-->
+        <div class="bg-white relative h-72">
+          <!-- fifth card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-white hover:bg-black"
+              >Technology
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >The world needs true geniuses now more than ever</a
+            >
+            <p class="text-base mt-2">
+              Monotonectally transition high-quality technologies with real-time
+              sources. Quickly...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/patricia.jpg"
+                alt="Patricia Callahan"
+              />
+              <p class="opacity-50 text-xs">Patricia Callahan</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end fifth card-->
+        <div class="bg-white relative h-72">
+          <!-- sixth card-->
+          <div class="relative">
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-black hover:bg-white"
+                >Technology</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fifth hover:text-black hover:bg-white"
+                >Travel</a
+              >
+            </div>
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >Does a blog post look better with a featured image</a
+            >
+            <p class="text-base mt-2">
+              Authoritatively pontificate synergistic total linkage and pandemic
+              metrics....
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/lisa.jpg"
+                alt="Lisa Schofield"
+              />
+              <p class="opacity-50 text-xs">Lisa Schofield</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end sixth card-->
+        <div class="bg-white relative h-72">
+          <!-- seventh card-->
+          <div class="relative">
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >If you're truly happy and you know it let it show</a
+            >
+            <p class="text-base mt-2">
+              Professionally transition backend action items whereas
+              client-centric internal or...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/joana.jpg"
+                alt="Joana Bergstein"
+              />
+              <p class="opacity-50 text-xs">Joana Bergstein</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end seventh card-->
+        <div class="bg-white relative h-72">
+          <!-- eighth card-->
+          <div class="relative">
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-black hover:bg-white"
+                >Food & Drinks</a
+              >
+            </div>
+          </div>
+
+          <div class="mt-16 pt-0 pb-7 pl-7 pr-7">
+            <a
+              href="#"
+              class="text-xl text-black hover:text-primary font-medium"
+              >With good typography you don't actually need images</a
+            >
+            <p class="text-base mt-2">
+              Distinctively coordinate pandemic technologies rather than
+              market-driven...
+            </p>
+            <div class="flex items-center absolute bottom-7">
+              <img
+                class="rounded-full mr-1"
+                src="/img/joana.jpg"
+                alt="Joana Bergstein"
+              />
+              <p class="opacity-50 text-xs">Joana Bergstein</p>
+              <div class="flex items-center ml-2 opacity-50">
+                <svg
+                  class="w-6 h-6 mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+                  ></path>
+                  <path
+                    d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+                  ></path>
+                </svg>
+                <p class="text-xs">Add comment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end eighth card-->
+      </div>
+      <h1 class="mt-32 mb-24 text-2xl">Layout D (3 columns)</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!--start sixth complex-->
+        <div class="relative">
+          <!-- first card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture_sixth.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-primary hover:text-black hover:bg-white"
+              >Lifestyle</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Everything you ever need to know about flowers</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end first card-->
+        <div class="relative">
+          <!-- second card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture8.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-secondary hover:text-black hover:bg-white"
+              >Food & Drinks</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Coffee and lemons don't go together that well</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end second card-->
+        <div class="relative">
+          <!-- third card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture9.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-secondary hover:text-black hover:bg-white"
+              >Food & Drinks</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Did you know that plants actually have a secret life?</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end third card-->
+        <div class="relative">
+          <!-- start fourth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/rock.jpg"
+              alt="avatar"
+            />
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-white mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-tertiary hover:text-black hover:bg-white"
+                >Entertainment</a
+              >
+            </div>
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Are rock concerts really coming back into fashion?
+            </a>
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/patricia.jpg"
+              alt="Patricia Callahan"
+            />
+            <p class="text-white text-xs">Patricia Callahan</p>
+          </div>
+        </div>
+        <!--end fourth card-->
+        <div class="relative">
+          <!-- fifth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture5.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-fourth hover:text-white hover:bg-black"
+              >Technology
+            </a>
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >The world needs treu geniuses now more than ever</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/patricia.jpg"
+              alt="Patricia Callahan"
+            />
+            <p class="text-white text-xs">Patricia Callahan</p>
+          </div>
+        </div>
+        <!--end fifth card-->
+        <div class="relative">
+          <!-- sixth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture6.jpg"
+              alt="avatar"
+            />
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-black hover:bg-white"
+                >Technology</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fifth hover:text-black hover:bg-white"
+                >Travel</a
+              >
+            </div>
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Does a blog post look better with a featured image?</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end sixth card-->
+      </div>
+      <!--end sixth complex-->
+      <h1 class="mt-32 mb-24 text-2xl">Layout A (3 columns)</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+        <!--start seventh complex-->
+        <div class="relative">
+          <!-- first card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture_sixth.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Everything you ever need to know about flowers</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end first card-->
+        <div class="relative">
+          <!-- second card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture8.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-secondary hover:text-black hover:bg-white"
+              >Food & Drinks</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Coffee and lemons don't go together that well</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end second card-->
+        <div class="relative">
+          <!-- third card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture9.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Did you know that plants actually have a secret life?</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end third card-->
+        <div class="relative">
+          <!-- fourth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/rock.jpg"
+              alt="avatar"
+            />
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-white mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-tertiary hover:text-black hover:bg-white"
+                >Entertainment</a
+              >
+            </div>
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Are rock concerts really coming back into fashion?</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Patricia Callahan"
+            />
+            <p class="text-white text-xs">Patricia Callahan/p></p>
+          </div>
+        </div>
+        <!--end fourth card-->
+        <div class="relative">
+          <!-- fifth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture5.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-fourth hover:text-white hover:bg-black"
+              >Technology</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >The world needs true geniuses now more than ever</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/patricia.jpg"
+              alt="Patricia Callahan"
+            />
+            <p class="text-white text-xs">Patricia Callahan</p>
+          </div>
+        </div>
+        <!--end fifth card-->
+        <div class="relative">
+          <!-- sixth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture6.jpg"
+              alt="avatar"
+            />
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-black hover:bg-white"
+                >Technology</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fifth hover:text-black hover:bg-white"
+                >Travel</a
+              >
+            </div>
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Does a blog post look better with a featured image?</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end sixth card-->
+        <div class="relative">
+          <!-- seventh card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/imageyear.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >If you're truly happy and you know it let it show</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/joana.jpg"
+              alt="Joana Bergstein"
+            />
+            <p class="text-white text-xs">Joana Bergstein</p>
+          </div>
+        </div>
+        <!--end seventh card-->
+        <div class="relative">
+          <!-- eighth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/austria.jpg"
+              alt="avatar"
+            />
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-secondary hover:text-black hover:bg-white"
+                >Food & Drinks</a
+              >
+            </div>
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >With good typography you don't actually need images</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/joana.jpg"
+              alt="Joana Bergstein"
+            />
+            <p class="text-white text-xs">Joana Bergstein</p>
+          </div>
+        </div>
+        <!--end eighth card-->
+      </div>
+      <!--end seventh complex-->
+      <h1 class="mt-32 mb-24 text-2xl">Layout A (3 columns)</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+        <!--start eighth complex-->
+        <div class="relative">
+          <!-- first card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture_sixth.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-primary hover:text-white hover:bg-black"
+              >Lifestyle</a
+            >
+          </div>
+          <div class="absolute z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7">
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Everything you ever need to know about flowers</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end first card-->
+        <div class="relative">
+          <!-- second card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture8.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+          </div>
+          <div
+            class="absolute z-10 max-w-sm top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7"
+          >
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Coffe and lemons don't go together that well</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end second card-->
+        <div class="relative">
+          <!-- third card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture9.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-secondary hover:text-white hover:bg-black"
+              >Food & Drinks</a
+            >
+          </div>
+          <div
+            class="absolute max-w-sm z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7"
+          >
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Did you know that plants actually have a secret life</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end third card-->
+        <div class="relative">
+          <!-- fourth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/rock.jpg"
+              alt="avatar"
+            />
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <svg
+                class="w-6 h-6 text-white mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-tertiary hover:text-black hover:bg-white"
+                >Entertainment</a
+              >
+            </div>
+          </div>
+          <div
+            class="absolute max-w-sm z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7"
+          >
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Are rock concerts really coming back into fashion?</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/patricia.jpg"
+              alt="Patricia Callahan"
+            />
+            <p class="text-white text-xs">Patricia Callahan</p>
+          </div>
+        </div>
+        <!--end fourth card-->
+        <div class="relative">
+          <!-- fifth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture5.jpg"
+              alt="avatar"
+            />
+            <a
+              href="#"
+              class="absolute left-7 top-7 inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase z-20 align-top text-white bg-fourth hover:text-white hover:bg-black"
+              >Technology</a
+            >
+          </div>
+          <div
+            class="absolute max-w-sm z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7"
+          >
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >The world needs true geniuses now more than ever</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/patricia.jpg"
+              alt="Patricia Callahan"
+            />
+            <p class="text-white text-xs">Patricia Callahan</p>
+          </div>
+        </div>
+        <!--end fifth card-->
+        <div class="relative">
+          <!-- sixth card-->
+          <div
+            class="w-full h-72 after:content[''] after:absolute after:bg-black after:opacity-40 after:bg- after:h-full after:w-full after:z-10 after:top-0 after:left-0 sm:relative"
+          >
+            <img
+              class="w-inherit h-inherit object-cover"
+              src="/img/picture6.jpg"
+              alt="avatar"
+            />
+            <div class="absolute z-20 left-7 top-7 flex items-center">
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fourth hover:text-black hover:bg-white"
+                >Technology</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs leading-3 pt-2 px-3 pb-1 rounded-2xl mr-1 uppercase align-top text-white bg-fifth hover:text-black hover:bg-white"
+                >Travel</a
+              >
+            </div>
+          </div>
+          <div
+            class="absolute max-w-sm z-10 top-0 left-0 mt-16 pt-0 pl-7 pb-0 pr-7"
+          >
+            <a
+              href="#"
+              class="text-xl text-white hover:text-primary font-medium"
+              >Does a blog post look better with a featured image?</a
+            >
+          </div>
+          <div class="flex items-center absolute bottom-7 z-10 pl-7">
+            <img
+              class="w-6 h-6 rounded-full mr-1"
+              src="/img/lisa.jpg"
+              alt="Lisa Schofield"
+            />
+            <p class="text-white text-xs">Lisa Schofield</p>
+          </div>
+        </div>
+        <!--end sixth card-->
+      </div>
+      <!--end eighth complex-->
+    </div>
+    <!--end container-->
   </body>
 </html>
