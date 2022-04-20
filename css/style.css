@@ -314,6 +314,12 @@ img {
   height: 24px;
 }
 
+.camera-svg__2 {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
 .section-grid__text--section,
 .section-grid__text--2 {
   margin-top: 70px;
